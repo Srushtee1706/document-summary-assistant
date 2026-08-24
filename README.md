@@ -76,7 +76,7 @@ npm run dev
 The application will be available at `http://localhost:5173`.
 
 ````
-
+Submitted By:
 Name: Srushtee Abhijit Patil
 College: Vellore Institute of Technology AP
 Reg_No: 23BCE7553
