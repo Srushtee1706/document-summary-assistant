@@ -5,9 +5,7 @@ An AI-powered web application that extracts text from uploaded documents and gen
 
 ##  Live Demo
 
-**Frontend:** https://document-summary-assistant-frontend-o0ol.onrender.com
-
-**Backend:** https://document-summary-assistant-pvm7.onrender.com
+[Open Document Summary Assistant](https://document-summary-assistant-frontend-o0ol.onrender.com)
 
 ##  Features
 
