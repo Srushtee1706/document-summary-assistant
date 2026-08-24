@@ -3,7 +3,7 @@
 
 An AI-powered web application that extracts text from uploaded documents and generates concise summaries and key points.
 
-##  Live Demo
+## Live Demo
 
 [Open Document Summary Assistant](https://document-summary-assistant-frontend-o0ol.onrender.com)
 
