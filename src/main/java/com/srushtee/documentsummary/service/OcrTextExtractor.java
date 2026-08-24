@@ -17,8 +17,21 @@ import java.nio.file.Path;
 @Service
 public class OcrTextExtractor implements TextExtractor {
 
+    /*
+     * Tesseract executable path.
+     *
+     * Local Windows:
+     * If TESSERACT_PATH is configured, that path will be used.
+     *
+     * Docker/Linux:
+     * Tesseract is installed in the container and available
+     * through the system PATH, so "tesseract" is used by default.
+     */
     private static final String TESSERACT_PATH =
-            "C:\\Program Files\\Tesseract-OCR\\tesseract.exe";
+            System.getenv().getOrDefault(
+                    "TESSERACT_PATH",
+                    "tesseract"
+            );
 
     private static final int SCALE_FACTOR = 2;
 
