@@ -1368,3 +1368,457 @@ footer {
     padding: 13px;
   }
 }
+
+
+/* =========================================================
+   THEME SUPPORT
+   - Light theme is the default.
+   - Dark theme follows the user's OS preference automatically.
+   - You can also force a theme from React:
+       <div id="root" data-theme="dark">
+       <div id="root" data-theme="light">
+   ========================================================= */
+
+/* LIGHT THEME */
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* DARK THEME — automatic OS preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  body,
+  .app {
+    background: #0f1115;
+    color: #f5f5f5;
+  }
+
+  .navbar {
+    background: #151820;
+    border-bottom-color: #292d36;
+  }
+
+  .brand {
+    color: #f5f5f5;
+  }
+
+  .brand-icon {
+    border-color: #f5f5f5;
+  }
+
+  .new-summary-button,
+  .hero-badge,
+  .length-option,
+  .copy-button {
+    background: #151820;
+    color: #f5f5f5;
+    border-color: #3a3f4a;
+  }
+
+  .new-summary-button:hover,
+  .length-option:hover,
+  .copy-button:hover {
+    background: #242934;
+    border-color: #f5f5f5;
+    color: #fff;
+  }
+
+  .hero h1 {
+    color: #fff;
+  }
+
+  .hero p {
+    color: #b7bcc7;
+  }
+
+  .panel-card,
+  .right-panel {
+    background: #151820;
+    border-color: #2d323d;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  .panel-card h2,
+  .drop-zone h3,
+  .empty-result h2,
+  .section-title h2 {
+    color: #f5f5f5;
+  }
+
+  .drop-zone {
+    border-color: #555b68;
+  }
+
+  .drop-zone:hover,
+  .drop-zone.dragging {
+    border-color: #fff;
+    background: #1b1f27;
+  }
+
+  .upload-symbol {
+    border-color: #f5f5f5;
+  }
+
+  .drop-zone p,
+  .drop-zone small,
+  .file-details span,
+  .empty-result p,
+  .security-note,
+  .no-key-points,
+  footer {
+    color: #a6acb8;
+  }
+
+  .file-card {
+    background: #1b1f27;
+    border-color: #343944;
+  }
+
+  .remove-file {
+    background: #303541;
+    color: #fff;
+  }
+
+  .length-option.selected,
+  .generate-button,
+  .bullet,
+  .file-icon,
+  .error-toast {
+    background: #fff;
+    color: #111;
+    border-color: #fff;
+  }
+
+  .generate-button:hover:not(:disabled) {
+    background: #e8e8e8;
+    color: #111;
+  }
+
+  .result-header {
+    border-bottom-color: #2d323d;
+  }
+
+  .tab {
+    color: #a6acb8;
+  }
+
+  .tab:hover {
+    background: #252a34;
+    color: #fff;
+  }
+
+  .tab.active {
+    background: #fff;
+    color: #111;
+  }
+
+  .copy-button:hover {
+    background: #252a34;
+  }
+
+  .result-section {
+    background: #1b1f27;
+    border-color: #343944;
+  }
+
+  .summary-text,
+  .key-points-list li {
+    color: #e4e7ec;
+  }
+
+  .spinner {
+    border-color: #626977;
+    border-top-color: #111;
+  }
+
+  .spinner.large {
+    border-color: #626977;
+    border-top-color: #fff;
+  }
+}
+
+/* DARK THEME — explicit */
+[data-theme="dark"] {
+  color-scheme: dark;
+  background: #0f1115;
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] .app {
+  background: #0f1115;
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] .navbar {
+  background: #151820;
+  border-bottom-color: #292d36;
+}
+
+[data-theme="dark"] .brand {
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] .brand-icon {
+  border-color: #f5f5f5;
+}
+
+[data-theme="dark"] .new-summary-button,
+[data-theme="dark"] .hero-badge,
+[data-theme="dark"] .length-option,
+[data-theme="dark"] .copy-button {
+  background: #151820;
+  color: #f5f5f5;
+  border-color: #3a3f4a;
+}
+
+[data-theme="dark"] .new-summary-button:hover,
+[data-theme="dark"] .length-option:hover,
+[data-theme="dark"] .copy-button:hover {
+  background: #242934;
+  border-color: #f5f5f5;
+  color: #fff;
+}
+
+[data-theme="dark"] .hero h1,
+[data-theme="dark"] .panel-card h2,
+[data-theme="dark"] .drop-zone h3,
+[data-theme="dark"] .empty-result h2,
+[data-theme="dark"] .section-title h2 {
+  color: #fff;
+}
+
+[data-theme="dark"] .hero p,
+[data-theme="dark"] .drop-zone p,
+[data-theme="dark"] .drop-zone small,
+[data-theme="dark"] .file-details span,
+[data-theme="dark"] .empty-result p,
+[data-theme="dark"] .security-note,
+[data-theme="dark"] .no-key-points,
+[data-theme="dark"] footer {
+  color: #a6acb8;
+}
+
+[data-theme="dark"] .panel-card,
+[data-theme="dark"] .right-panel {
+  background: #151820;
+  border-color: #2d323d;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme="dark"] .drop-zone {
+  border-color: #555b68;
+}
+
+[data-theme="dark"] .drop-zone:hover,
+[data-theme="dark"] .drop-zone.dragging {
+  border-color: #fff;
+  background: #1b1f27;
+}
+
+[data-theme="dark"] .upload-symbol {
+  border-color: #f5f5f5;
+}
+
+[data-theme="dark"] .file-card,
+[data-theme="dark"] .result-section {
+  background: #1b1f27;
+  border-color: #343944;
+}
+
+[data-theme="dark"] .remove-file {
+  background: #303541;
+  color: #fff;
+}
+
+[data-theme="dark"] .length-option.selected,
+[data-theme="dark"] .generate-button,
+[data-theme="dark"] .bullet {
+  background: #fff;
+  color: #111;
+  border-color: #fff;
+}
+
+[data-theme="dark"] .generate-button:hover:not(:disabled) {
+  background: #e8e8e8;
+  color: #111;
+}
+
+[data-theme="dark"] .result-header {
+  border-bottom-color: #2d323d;
+}
+
+[data-theme="dark"] .tab {
+  color: #a6acb8;
+}
+
+[data-theme="dark"] .tab:hover {
+  background: #252a34;
+  color: #fff;
+}
+
+[data-theme="dark"] .tab.active {
+  background: #fff;
+  color: #111;
+}
+
+[data-theme="dark"] .summary-text,
+[data-theme="dark"] .key-points-list li {
+  color: #e4e7ec;
+}
+
+[data-theme="dark"] .spinner {
+  border-color: #626977;
+  border-top-color: #111;
+}
+
+[data-theme="dark"] .spinner.large {
+  border-color: #626977;
+  border-top-color: #fff;
+}
+
+/* Explicit LIGHT THEME — useful if the app adds data-theme="light" */
+[data-theme="light"] body,
+[data-theme="light"] .app {
+  background: #f7f7f7;
+  color: #111;
+}
+
+[data-theme="light"] .navbar {
+  background: #fff;
+  border-bottom-color: #e5e5e5;
+}
+
+[data-theme="light"] .panel-card,
+[data-theme="light"] .right-panel {
+  background: #fff;
+  border-color: #dedede;
+}
+
+[data-theme="light"] .result-section {
+  background: #fafafa;
+  border-color: #e3e3e3;
+}
+
+/* =========================================================
+   EXTRA RESPONSIVE SAFETY
+   ========================================================= */
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    gap: 16px;
+  }
+
+  .left-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .right-panel {
+    min-width: 0;
+  }
+
+  .result-header {
+    align-items: center;
+  }
+
+  .tabs {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .new-summary-button {
+    flex-shrink: 0;
+  }
+
+  .hero h1 {
+    word-break: normal;
+  }
+
+  .file-details {
+    min-width: 0;
+  }
+
+  .file-details strong {
+    max-width: 100%;
+  }
+
+  .result-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .copy-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .new-summary-button {
+    padding: 7px 8px;
+  }
+
+  .hero {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .dashboard {
+    width: calc(100% - 14px);
+  }
+
+  .length-grid {
+    gap: 5px;
+  }
+
+  .length-option {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
