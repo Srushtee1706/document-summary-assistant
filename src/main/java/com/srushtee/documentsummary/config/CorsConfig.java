@@ -18,7 +18,10 @@ public class CorsConfig {
 
                 registry
                         .addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173")
+                        .allowedOrigins(
+                                "http://localhost:5173",
+                                "https://document-summary-assistant-frontend-o0ol.onrender.com"
+                        )
                         .allowedMethods(
                                 "GET",
                                 "POST",
