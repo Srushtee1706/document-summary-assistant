@@ -97,7 +97,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/documents/process?length=${length}`,
+        `https://document-summary-assistant-pvm7.onrender.com/api/documents/process?length=${length}`,
         {
           method: "POST",
           body: formData,
@@ -173,6 +173,7 @@ function App() {
 
       try {
         document.execCommand("copy");
+
         setCopied(true);
 
         setTimeout(() => {
@@ -375,6 +376,7 @@ function App() {
                 }
                 onClick={() => setLength("SHORT")}
               >
+
                 <strong>
                   Short
                 </strong>
@@ -394,6 +396,7 @@ function App() {
                 }
                 onClick={() => setLength("MEDIUM")}
               >
+
                 <strong>
                   Medium
                 </strong>
@@ -413,6 +416,7 @@ function App() {
                 }
                 onClick={() => setLength("LONG")}
               >
+
                 <strong>
                   Long
                 </strong>
@@ -658,9 +662,7 @@ function App() {
       {error && (
 
         <div className="error-toast">
-
           {error}
-
         </div>
 
       )}
